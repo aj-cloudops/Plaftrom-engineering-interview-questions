@@ -4,17 +4,23 @@ AWS ECS Interview Questions & Answers
 🟢 BEGINNER (Questions 1–25)
 
 1. What is Amazon ECS?
-Amazon Elastic Container Service (ECS) is a fully managed container orchestration service provided by AWS. It allows you to run, stop, and manage Docker containers on a cluster of EC2 instances or using AWS Fargate (serverless). ECS handles scheduling, scaling, health monitoring, and integration with other AWS services.
+Amazon Elastic Container Service (ECS) is a fully managed container orchestration service provided by AWS. It allows you to run, stop, and manage Docker containers on a cluster of EC2 instances or using AWS Fargate (serverless). ECS handles scheduling, scaling, health monitoring, and integration with other AWS services. 
+---
 2. What does ECS stand for?
 ECS stands for Elastic Container Service.
+---
 3. What is a container in the context of AWS ECS?
 A container is a lightweight, standalone, executable package that includes everything needed to run a piece of software — code, runtime, libraries, and settings. In ECS, containers are typically Docker containers that run based on Docker images stored in registries like Amazon ECR or Docker Hub.
+---
 4. What is a Docker image?
 A Docker image is a read-only template used to create containers. It contains the application code, dependencies, environment variables, and configuration. Images are built from a Dockerfile and can be stored in container registries like Amazon ECR (Elastic Container Registry).
+---
 5. What is a Task Definition in ECS?
 A Task Definition is a JSON blueprint that describes how one or more containers should run. It specifies: Docker image to use, CPU and memory requirements, networking mode, IAM roles, environment variables, port mappings, logging configuration, and volume mounts. It's similar to a Kubernetes Pod spec.
+---
 6. What is an ECS Cluster?
 An ECS Cluster is a logical grouping of tasks or services. It acts as the infrastructure boundary for your containerized workloads. Clusters can use EC2 instances (where you manage the underlying infrastructure) or Fargate (serverless, where AWS manages it). A single AWS account can have multiple clusters.
+---
 7. What is an ECS Service?
 An ECS Service ensures that a specified number of task instances run continuously. If a task fails or stops, the service scheduler automatically launches another instance to replace it. Services also support load balancing, rolling deployments, and auto scaling.
 8. What is the difference between a Task and a Service in ECS?
